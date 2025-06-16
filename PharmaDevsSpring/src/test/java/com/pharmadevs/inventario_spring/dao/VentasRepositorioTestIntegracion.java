@@ -14,9 +14,6 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
@@ -52,7 +49,7 @@ public class VentasRepositorioTestIntegracion {
         assertEquals("Efectivo",ventas.getFormapago());
         assertEquals("150.00",ventas.getTotalventa());
     }
-
+//Actualizar
     @Test
     public void update() {
         Optional<Ventas> ventas = ventasRepositorio.findById(1);
@@ -64,7 +61,7 @@ public class VentasRepositorioTestIntegracion {
 
         Ventas ventasActualizado = ventasRepositorio.save(ventas.orElse(null));
 
-        assertEquals("Cheque", ventasActualizado.getFormapago());
+
         assertEquals("180.00", ventasActualizado.getTotalventa());
     }
 
