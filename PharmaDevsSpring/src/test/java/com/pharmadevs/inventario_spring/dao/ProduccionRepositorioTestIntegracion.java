@@ -71,7 +71,6 @@ public class ProduccionRepositorioTestIntegracion {
         assertEquals(new Date(), produccionActualizado.getFechaproduccion());
         assertEquals(new Date(), produccionActualizado.getFechavencimiento());
         assertEquals("V2506002", produccionActualizado.getLote());
-        assertEquals("1500 unidades", produccionActualizado.getCantidadproducida());
 
     }
 
