@@ -74,6 +74,6 @@ public class DetalleCompraRepositorioTestIntegracion {
         if(detalleCompraRepositorio.existsById(1)){
             detalleCompraRepositorio.deleteById(1);
         }
-        assertFalse(detalleCompraRepositorio.existsById(1),"El detalle de factura compra con id=1 deberia haberse eliminado");
+        assertFalse(detalleCompraRepositorio.existsById(1),"El detalle de factura compra con id=1 eliminado");
     }
 }
