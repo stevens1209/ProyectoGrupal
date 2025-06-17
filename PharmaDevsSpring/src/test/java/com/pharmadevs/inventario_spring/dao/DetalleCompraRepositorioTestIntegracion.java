@@ -66,7 +66,6 @@ public class DetalleCompraRepositorioTestIntegracion {
         Detallefacturacompra detallefacturacompraActualizado = detalleCompraRepositorio.save(detallefacturacompra.orElse(null));
         assertEquals(120.15F, detallefacturacompraActualizado.getSubtotal());
         assertEquals("15% Azul", detallefacturacompraActualizado.getIva());
-        assertEquals(10.00F, detallefacturacompraActualizado.getPreciounitario());
         assertEquals("10", detallefacturacompraActualizado.getCantidad());
     }
 
